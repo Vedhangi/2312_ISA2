@@ -3,8 +3,7 @@ pipeline {
     
     environment {
         PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}" // Adjust if Docker is installed elsewhere
-        DOCKER_USER = "mca2312"
-        DOCKER_PASSWORD = credentials('mca092312') // Store 'docker_password' in Jenkins credentials
+        
     }
     
     stages {
