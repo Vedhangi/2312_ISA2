@@ -34,9 +34,9 @@ pipeline {
                 bat 'docker login -u "mca2312" -p "mca092312" docker.io'
             }
         }
-        stage('Push') {
+        stage('delete') {
             steps {
-                bat 'docker push mca2312/isa2'
+                bat 'docker -rm "2312'
             }
         }
         stage('Run in Daemon Mode') {
