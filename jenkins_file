@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}" // Adjust if Docker is installed elsewhere
+        PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}" 
       
     }
     
@@ -39,7 +39,7 @@ pipeline {
         stage('Delete ') {
             steps {
                 script {
-                    // Remove the container if it exists
+                    
                     bat 'docker rm -f 2312 '
                 }
             }
