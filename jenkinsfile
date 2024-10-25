@@ -9,7 +9,7 @@ pipeline {
         stage('Clean and Clone Repository') {
             steps {
                 cleanWs()
-                bat 'git clone https://github.com/Vedhangi/sampledocker.git'
+                bat 'git clone https://github.com/Vedhangi/2312_ISA2.git'
             }
         }
         stage('List Files') {
