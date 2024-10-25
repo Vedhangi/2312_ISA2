@@ -15,14 +15,14 @@ pipeline {
         stage('List Files') {
             steps {
                 // List files to verify Dockerfile location
-                dir('2312_ISA2') {
+                dir('isa2') {
                     bat 'dir'
                 }
             }
         }
         stage('Build') {
             steps {
-                dir('2312_ISA2') {
+                dir('isa2') {
                     bat 'docker build -t mca2312/isa2 -f Dockerfile .'
                 }
             }
