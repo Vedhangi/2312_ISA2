@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}" // Adjust if Docker is installed elsewhere
-        
+      
     }
     
     stages {
@@ -38,7 +38,7 @@ pipeline {
             }
         }
         
-        stage('Delete Existing Container') {
+        stage('Delete ') {
             steps {
                 script {
                     // Remove the container if it exists
