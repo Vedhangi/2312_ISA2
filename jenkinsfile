@@ -36,7 +36,7 @@ pipeline {
         }
         stage('delete') {
             steps {
-                bat 'docker -rm "2312'
+                bat 'docker -rm "2312"'
             }
         }
         stage('Run in Daemon Mode') {
@@ -47,4 +47,4 @@ pipeline {
             }
         }
     }
-
+}
