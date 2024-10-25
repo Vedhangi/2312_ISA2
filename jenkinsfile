@@ -20,6 +20,11 @@ pipeline {
                 }
             }
         }
+        stages('delete'){
+            steps {
+               bat docker rm -f "2312"
+}
+}
         stage('Build') {
             steps {
                 dir('2312_ISA2') {
